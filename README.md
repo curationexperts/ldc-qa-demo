@@ -1,24 +1,7 @@
-# README
+# Controlled Vocabulary Demo
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This is a demonstration of linked controlled vocabularies in Hyrax. This
+application uses a
+[Linked Data Fragments](https://github.com/ActiveTriples/linked-data-fragments)
+based caching approach to support query of both web-based and local controlled
+vocabularies.
