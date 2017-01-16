@@ -15,6 +15,13 @@ GIT
       activesupport (>= 4.0)
 
 GIT
+  remote: https://github.com/no-reply/qa-ldf.git
+  revision: 2e7e5234ae4a67ee40b482d1a5e05f64e1dde3df
+  specs:
+    qa-ldf (0.1.0)
+      qa (~> 0.11.0)
+
+GIT
   remote: https://github.com/projecthydra-labs/hyrax.git
   revision: 9be85435e8f9cb95037ba6f0b0c101253ded5f4b
   specs:
@@ -673,6 +680,7 @@ DEPENDENCIES
   pg
   pry-rails
   puma (~> 3.0)
+  qa-ldf!
   rails (~> 5.0.1)
   rsolr (~> 1.0)
   rspec-rails
