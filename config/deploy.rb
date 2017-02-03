@@ -34,6 +34,7 @@ set :linked_files,
       config/fedora.yml
       config/redis.yml
       config/resque-pool.yml
+      config/role_map.yml
       config/secrets.yml
       config/solr.yml
     )
