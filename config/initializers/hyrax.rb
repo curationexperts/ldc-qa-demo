@@ -1,3 +1,9 @@
+require 'linked_data_fragments/cache_server'
+require 'linked_data_fragments/repository' # replace with a real repository
+
+require 'rdf/vocab'
+require 'rdf/rdfxml'
+
 Hyrax.config do |config|
   # Note: order of registration affects Zotero/Arkivo
   # Injected via `rails g hyrax:work Work`

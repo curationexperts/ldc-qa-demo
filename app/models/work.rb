@@ -8,4 +8,6 @@ class Work < ActiveFedora::Base
   validates :title, presence: { message: 'Your work must have a title.' }
   
   self.human_readable_type = 'Work'
+
+  property :programmer, predicate: ::RDF::Vocab::MARCRelators.prg
 end
