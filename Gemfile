@@ -5,7 +5,8 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-gem 'qa-ldf',            github: 'no-reply/qa-ldf'
+gem 'rdf', '~>2.1.0'
+gem 'qa-ldf',            github: 'curationexperts/qa-ldf'
 gem 'ld_cache_fragment', github: 'ActiveTriples/linked-data-fragments', branch: 'feature/rack-server'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
