@@ -20,14 +20,6 @@ GIT
       tinymce-rails (~> 4.0)
 
 GIT
-  remote: https://github.com/curationexperts/qa-ldf.git
-  revision: 2ebeb613eae865489ce1f76666f68afe654d63e9
-  branch: feature/qa-ns
-  specs:
-    qa-ldf (0.1.0)
-      qa (~> 0.11.0)
-
-GIT
   remote: https://github.com/projecthydra-labs/hyrax.git
   revision: a31d11d2175941162ba34c0bd00961f2becd07f7
   specs:
@@ -521,6 +513,8 @@ GEM
       faraday
       nokogiri (~> 1.6)
       rails (>= 4.2.0, < 6.0)
+    qa-ldf (0.1.0)
+      qa (~> 0.11.0)
     rack (2.0.1)
     rack-linkeddata (1.1.0)
       linkeddata (>= 1.1.0)
@@ -772,7 +766,7 @@ DEPENDENCIES
   pg
   pry-rails
   puma (~> 3.0)
-  qa-ldf!
+  qa-ldf (~> 0.1.0)
   rails (~> 5.0.1)
   rdf (~> 2.1.0)
   rsolr (~> 1.0)
