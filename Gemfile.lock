@@ -21,18 +21,11 @@ GIT
 
 GIT
   remote: https://github.com/curationexperts/qa-ldf.git
-  revision: 078cd5c581b0bf04729c9737a2aba5062d6374b3
+  revision: 2ebeb613eae865489ce1f76666f68afe654d63e9
+  branch: feature/qa-ns
   specs:
     qa-ldf (0.1.0)
       qa (~> 0.11.0)
-
-GIT
-  remote: https://github.com/jcoyne/flipflop.git
-  revision: 0eecddade9890548c92b1e8aa681512f1db01469
-  branch: hydra
-  specs:
-    flipflop (2.2.1)
-      activesupport (>= 4.0)
 
 GIT
   remote: https://github.com/projecthydra-labs/hyrax.git
@@ -82,6 +75,14 @@ GIT
       tinymce-rails (~> 4.1)
       tinymce-rails-imageupload (~> 4.0.17.beta)
       yaml_db (~> 0.2)
+
+GIT
+  remote: https://github.com/voormedia/flipflop.git
+  revision: 590f2aed794327e0bc2c837cd029f47bc61715b4
+  ref: 590f2ae
+  specs:
+    flipflop (2.2.1)
+      activesupport (>= 4.0)
 
 GEM
   remote: https://rubygems.org/
@@ -763,7 +764,7 @@ DEPENDENCIES
   devise-guests (~> 0.5)
   fcrepo_wrapper
   flipflop!
-  hyrax!
+  hyrax (= 1.0.0.alpha)!
   jbuilder (~> 2.5)
   jquery-rails
   ld_cache_fragment!
