@@ -7,7 +7,7 @@ end
 
 gem 'rdf',    '~>2.1.0'
 gem 'qa-ldf', '~>0.1.0'
-gem 'ld_cache_fragment', github: 'ActiveTriples/linked-data-fragments', branch: 'feature/rack-server'
+gem 'ld_cache_fragment', github: 'ActiveTriples/linked-data-fragments', branch: 'feature/multi-dataset'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.1'

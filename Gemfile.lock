@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/ActiveTriples/linked-data-fragments.git
-  revision: 12e66e4bc881c43f0e35234ba4c0f5e02173face
-  branch: feature/rack-server
+  revision: 5fbd0e7e3668c32970ac2c84779380da8cdc981d
+  branch: feature/multi-dataset
   specs:
     ld_cache_fragment (0.1.0)
       active-triples
