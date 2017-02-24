@@ -5,6 +5,9 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'rdf',    '~>2.1.0'
+gem 'qa-ldf', '~>0.1.0'
+gem 'ld_cache_fragment', github: 'ActiveTriples/linked-data-fragments', branch: 'feature/rack-server'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.1'
@@ -59,8 +62,8 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem 'hyrax', '0.0.1.alpha', github: 'projecthydra-labs/hyrax'
-gem 'flipflop', github: 'jcoyne/flipflop', branch: 'hydra'
+gem 'hyrax', '1.0.0.alpha', github: 'projecthydra-labs/hyrax'
+gem 'flipflop', git: 'https://github.com/voormedia/flipflop.git', ref: '590f2ae'
 group :development, :test do
   gem 'solr_wrapper', '>= 0.3'
 end
@@ -68,6 +71,7 @@ end
 gem 'rsolr', '~> 1.0'
 gem 'devise'
 gem 'devise-guests', '~> 0.5'
+
 group :development, :test do
   gem 'fcrepo_wrapper'
   gem 'rspec-rails'
