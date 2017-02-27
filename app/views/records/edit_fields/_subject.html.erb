@@ -1,0 +1,13 @@
+<%=
+  f.input key,
+  as: :multi_value,
+  input_html: {
+  class: 'form-control',
+  data: { 'autocomplete-url' => "/authorities/search/loc/subjects",
+'autocomplete' => key }
+} ,
+required: f.object.required?(key) %>
+
+<%= f.input :authorities, collection: f.object.authorities, prompt: "Select an authority", label: false %>
+
+
