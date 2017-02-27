@@ -1,5 +1,5 @@
-$('document').ready(function() {
+$("document").ready(function() {
     if ($("[name='work[authorities]").length) {
-	authoritySelect({ select : "[name='work[authorities]']", input : "[name='work[subject][]']" });
+	authoritySelect({ inputClass : ".work_subject", selectBox : "[name='work[authorities]']", inputField : "[name='work[subject][]']" });
     }
 });
