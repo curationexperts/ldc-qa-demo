@@ -1,5 +1,7 @@
 $("document").ready(function() {
     if ($("[name='work[authorities]").length) {
-	authoritySelect({ inputClass : ".work_subject", selectBox : "[name='work[authorities]']", inputField : "[name='work[subject][]']" });
+	var authoritySelect = require('authority_select');
+	var as = new authoritySelect.AuthoritySelect({ inputClass : ".work_subject", selectBox : "[name='work[authorities]']", inputField : "[name='work[subject][]']" });
+	as.initialize();
     }
 });
