@@ -6,9 +6,9 @@ var authoritySelect = function(options) {
     });
     
     $(options.inputClass).on('click', '.controls-add-text' ,function(data) {
-	var selection = $(options.select).val();
+	var selection = $(options.selectBox).val();
 	$(document).on('DOMNodeInserted', function() {
-	    $(options.input).each(function(data) { $(this).data('autocomplete-url',selection) });
+	    $(options.inputField).each(function(data) { $(this).data('autocomplete-url',selection) });
 	    Hyrax.autocomplete();
 	});
     });  
