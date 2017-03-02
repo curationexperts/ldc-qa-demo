@@ -6,7 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 gem 'rdf',    '~>2.1.0'
-gem 'qa-ldf', '~>0.1.0'
+gem 'qa-ldf', '~>0.2.0'
 gem 'ld_cache_fragment', github: 'ActiveTriples/linked-data-fragments', branch: 'feature/multi-dataset'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
