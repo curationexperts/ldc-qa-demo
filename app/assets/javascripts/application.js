@@ -18,6 +18,7 @@
 // Required by Blacklight
 //= require blacklight/blacklight
 
-//= require_tree .
 //= require hyrax
-
+//= require almond
+//= require authority_select
+//= require subject
