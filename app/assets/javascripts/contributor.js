@@ -1,7 +1,5 @@
-$("document").ready(function() {
-    if ($("[name='work[authorities]").length) {
+Blacklight.onLoad( function() {
 	var authoritySelect = require('authority_select');
-	var as = new authoritySelect.AuthoritySelect({ selectBox : "[name='work[authorities]']", inputField : "[name='work[contributor][]']" });
+	var as = new authoritySelect.AuthoritySelect({ selectBox : "#work_contributor_authorities", inputField : "[name='work[contributor][]']" });
 	as.initialize();
-    }
 });
