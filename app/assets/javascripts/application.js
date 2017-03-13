@@ -24,5 +24,3 @@
 
 //= require creator
 //= require contributor
-
-
