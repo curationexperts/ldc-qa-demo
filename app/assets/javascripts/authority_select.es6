@@ -20,9 +20,9 @@ export class AuthoritySelect {
 	$(selectBox).on('change', function (data) {
 	    var selectBoxValue = $(this).val();
 	    $(inputField).each(function (data) { $(this).data('autocomplete-url', selectBoxValue);
-				
+						 
 					       });
-	    Hyrax.autocomplete();
+	    setupAutocomplete();
 	});
     }
     /**
@@ -32,10 +32,11 @@ export class AuthoritySelect {
 	var selectBox = this.selectBox;
 	var inputField = this.inputField;
 	
+	
 	var observer = new MutationObserver(function (mutations) {
 	    mutations.forEach(function (mutation) {
 		$(inputField).each(function (data) { $(this).data('autocomplete-url', $(selectBox).val()) });
-		Hyrax.autocomplete();
+		setupAutocomplete();
 	    });
 	});
 
@@ -43,12 +44,32 @@ export class AuthoritySelect {
 	observer.observe(document.body, config);
     }
 
-   /**
-    * Initialize bindings
-    */
+    
+
+    /**
+     * Initialize bindings
+     */
     initialize() {
 	this.selectBoxChange();
 	this.observeAddedElement();
+	setupAutocomplete();
     }
 }
 
+/**
+ * intialize the Hyrax autocomplete with the fields that you are using
+ */
+function setupAutocomplete() {
+    var Autocomplete = require('hyrax/autocomplete');
+    var autocomplete = new Autocomplete({
+	"autocompleteFields":
+	["creator","contributor"]
+    });
+
+    $('.multi_value.form-group').manage_fields({
+        add: function(e, element) {
+	    autocomplete.fieldAdded(element);
+        }
+    });
+    autocomplete.setup();
+};
