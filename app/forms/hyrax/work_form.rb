@@ -13,7 +13,7 @@ module Hyrax
       @authorities = Rails.application.config_for(:authorities)
     end
 
-    def creator_authoritiesy
+    def creator_authorities
       self.authorities
     end
 
