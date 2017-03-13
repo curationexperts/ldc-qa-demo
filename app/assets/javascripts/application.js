@@ -23,4 +23,3 @@
 //= require authority_select
 //= require creator
 //= require contributor
-
