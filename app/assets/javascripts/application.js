@@ -22,3 +22,4 @@
 //= require almond
 //= require authority_select
 //= require subject
+
