@@ -21,5 +21,5 @@
 //= require hyrax
 //= require almond
 //= require authority_select
-//= require subject
-
+//= require creator
+//= require contributor
