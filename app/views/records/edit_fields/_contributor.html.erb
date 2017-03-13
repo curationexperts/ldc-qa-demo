@@ -8,6 +8,4 @@
 } ,
 required: f.object.required?(key) %>
 
-<%= f.input :contributor_authorities, collection: f.object.authorities, prompt: "Select an authority", label: false %>
-
-
+<%= f.input :contributor_authorities, collection: f.object.contributor_authorities, prompt: "Select an authority", label: false %>

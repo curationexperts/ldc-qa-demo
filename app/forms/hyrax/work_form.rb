@@ -2,8 +2,6 @@
 #  `rails generate hyrax:work Work`
 module Hyrax
   class WorkForm < Hyrax::Forms::WorkForm
-
-    attr_writer :subject_authorities
     attr_writer :creator_authorities
     attr_writer :contributor_authorities
     
@@ -15,6 +13,14 @@ module Hyrax
     end
     
     def subject_authorities
+      self.authorities
+    end
+
+    def creator_authorities
+      self.authorities
+    end
+
+    def contributor_authorities
       self.authorities
     end
 
