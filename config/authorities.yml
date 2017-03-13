@@ -1,10 +1,6 @@
 development:	
-     "Library of Congress Subject Headings" : '/authorities/search/loc/subjects'
+     "Library of Congress Names" : '/authorities/search/loc/names'
      "FAST" : '/authorities/search/assign_fast/all'
 production:	
-     "Library of Congress Subject Headings" : '/authorities/search/loc/subjects'
+     "Library of Congress Names" : '/authorities/search/loc/names'
      "FAST" : '/authorities/search/assign_fast/all'
-     
-
-     
-
