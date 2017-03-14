@@ -63,7 +63,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'hyrax', '1.0.0.alpha', github: 'projecthydra-labs/hyrax'
-gem 'flipflop', git: 'https://github.com/voormedia/flipflop.git', ref: '590f2ae'
+
 group :development, :test do
   gem 'solr_wrapper', '>= 0.3'
 end
