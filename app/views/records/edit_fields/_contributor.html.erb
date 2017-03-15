@@ -1,3 +1,5 @@
+<% name_authorities = Hyrax::NameAuthorities.new %>
+
 <%=
   f.input key,
   as: :multi_value,
@@ -8,4 +10,4 @@
 } ,
 required: f.object.required?(key) %>
 
-<%= f.input :contributor_authorities, collection: f.object.contributor_authorities, prompt: "Select an authority", label: false %>
+<%= f.input key, collection: name_authorities.select_active_options, label: false %>
