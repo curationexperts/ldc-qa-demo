@@ -4,6 +4,8 @@ require 'linked_data_fragments/repository' # replace with a real repository
 require 'rdf/vocab'
 require 'rdf/rdfxml'
 
+Qa::LDF.configure!(endpoint: LinkedDataFragments::Settings.uri_root)
+
 Hyrax.config do |config|
   # Note: order of registration affects Zotero/Arkivo
   # Injected via `rails g hyrax:work Work`
