@@ -10,5 +10,4 @@
 } ,
 required: f.object.required?(key) %>
 
-<%= f.input key, collection: name_authorities.select_active_options, label: false %>
-
+<%= f.input key, collection: name_authorities.select_active_options, prompt: "Authority/Vocabulary", label: false %>
